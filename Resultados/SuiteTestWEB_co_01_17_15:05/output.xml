@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.6.9 on linux)" generated="20230117 15:05:24.156" rpa="false" schemaversion="3">
+<suite id="s1" name="SuiteTestWEB" source="/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/testCases/SuiteTestWEB.robot">
+<kw name="-CONFIGURACIÓN INICIAL SUITETEST-" library="libraries_keywords" type="SETUP">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230117 15:05:31.608" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230117 15:05:28.608" endtime="20230117 15:05:31.609"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:28.607" endtime="20230117 15:05:31.609"/>
+</kw>
+<test id="s1-t1" name="Test Case 1 prueba Login co" line="12">
+<kw name="-CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="SETUP">
+<kw name="-CONFIGURAR DIRECTORIO SCREENSHOTS-" library="libraries_keywords">
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20230117 15:05:31.614" endtime="20230117 15:05:31.615"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:31.614" endtime="20230117 15:05:31.615"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:31.613" endtime="20230117 15:05:31.616"/>
+</kw>
+<kw name="-LOGIN HOME CV CON PERFIL-" library="tests_keywords">
+<arg>${email_valido}</arg>
+<arg>${pass_valido}</arg>
+<kw name="-ABRIR LOGIN PAGE-" library="tests_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_login_page}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 15:05:31.618" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.clarovideo.com/colombia/login'.</msg>
+<msg timestamp="20230117 15:05:32.895" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230117 15:05:32.897" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</msg>
+<status status="FAIL" starttime="20230117 15:05:31.617" endtime="20230117 15:05:32.899"/>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<arg>1200</arg>
+<arg>1200</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230117 15:05:32.900" endtime="20230117 15:05:32.900"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:31.617" endtime="20230117 15:05:32.901"/>
+</kw>
+<kw name="-INGRESAR EMAIL PARA LOGIN-" library="tests_keywords">
+<arg>${email}</arg>
+<status status="NOT RUN" starttime="20230117 15:05:32.901" endtime="20230117 15:05:32.901"/>
+</kw>
+<kw name="-INGRESAR PASSWORD PARA LOGIN-" library="tests_keywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230117 15:05:32.902" endtime="20230117 15:05:32.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 15:05:32.902" endtime="20230117 15:05:32.902"/>
+</kw>
+<kw name="-CLICK IMAGEN DE PERFIL-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 15:05:32.902" endtime="20230117 15:05:32.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 15:05:32.902" endtime="20230117 15:05:32.903"/>
+</kw>
+<kw name="-VALIDAR CARGA HOME-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 15:05:32.903" endtime="20230117 15:05:32.903"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:31.616" endtime="20230117 15:05:32.904"/>
+</kw>
+<kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 15:05:32.906" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230117 15:05:32.906" endtime="20230117 15:05:32.906"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:32.905" endtime="20230117 15:05:32.906"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:31.610" endtime="20230117 15:05:32.907">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</status>
+</test>
+<test id="s1-t2" name="CV-WEB-ACCESO-VALIDAR LOGOUT" line="20">
+<kw name="-CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="SETUP">
+<kw name="-CONFIGURAR DIRECTORIO SCREENSHOTS-" library="libraries_keywords">
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20230117 15:05:32.909" endtime="20230117 15:05:32.911"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:32.909" endtime="20230117 15:05:32.911"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:32.908" endtime="20230117 15:05:32.911"/>
+</kw>
+<kw name="-LOGIN HOME CV-" library="tests_keywords">
+<arg>${email_valido}</arg>
+<arg>${pass_valido}</arg>
+<kw name="-ABRIR LOGIN PAGE-" library="tests_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_login_page}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 15:05:32.913" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.clarovideo.com/colombia/login'.</msg>
+<msg timestamp="20230117 15:05:34.185" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230117 15:05:34.186" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</msg>
+<status status="FAIL" starttime="20230117 15:05:32.913" endtime="20230117 15:05:34.187"/>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<arg>1200</arg>
+<arg>1200</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230117 15:05:34.188" endtime="20230117 15:05:34.188"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:32.912" endtime="20230117 15:05:34.189"/>
+</kw>
+<kw name="-INGRESAR EMAIL PARA LOGIN-" library="tests_keywords">
+<arg>${email}</arg>
+<status status="NOT RUN" starttime="20230117 15:05:34.190" endtime="20230117 15:05:34.190"/>
+</kw>
+<kw name="-INGRESAR PASSWORD PARA LOGIN-" library="tests_keywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230117 15:05:34.190" endtime="20230117 15:05:34.190"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 15:05:34.190" endtime="20230117 15:05:34.190"/>
+</kw>
+<kw name="-VALIDAR CARGA HOME-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 15:05:34.191" endtime="20230117 15:05:34.191"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:32.911" endtime="20230117 15:05:34.191"/>
+</kw>
+<kw name="-LOGOUT HOME CV-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 15:05:34.192" endtime="20230117 15:05:34.192"/>
+</kw>
+<kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 15:05:34.194" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230117 15:05:34.193" endtime="20230117 15:05:34.194"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:34.193" endtime="20230117 15:05:34.194"/>
+</kw>
+<status status="FAIL" starttime="20230117 15:05:32.908" endtime="20230117 15:05:34.194">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</status>
+</test>
+<kw name="-TERMINAR CONFIGURACIÓN SUITETEST-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 15:05:34.197" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230117 15:05:34.196" endtime="20230117 15:05:34.197"/>
+</kw>
+<kw name="-CERRAR TODOS LOS NAVEGADORES-" library="libraries_keywords">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230117 15:05:34.197" endtime="20230117 15:05:34.198"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:34.197" endtime="20230117 15:05:34.198"/>
+</kw>
+<status status="PASS" starttime="20230117 15:05:34.196" endtime="20230117 15:05:34.198"/>
+</kw>
+<doc>Ambiente Global FrameWork generico para ajustar de acuerdo al BRF</doc>
+<status status="FAIL" starttime="20230117 15:05:24.158" endtime="20230117 15:05:34.198"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="SuiteTestWEB">SuiteTestWEB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

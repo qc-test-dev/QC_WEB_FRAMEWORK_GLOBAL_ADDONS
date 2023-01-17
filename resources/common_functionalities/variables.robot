@@ -14,7 +14,7 @@ ${pass_gratis}          Claro123
 ${content_add_favs}        jumanji
 
 #DirPaths
-${localpath}              /Users/at/Desktop/qc/automation/Global_framework_generico_login/qc_web_8531
+${localpath}               /home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS
 ${screenshots-folder}      ${localpath}/Resultados/screenshots
 ${textos_payment}          ${localpath}/resources/CV-POM/paymentPage/textosPayment
 ${path_cv-pom}             ${localpath}/resources/CV-POM

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.6.9 on linux)" generated="20230117 16:40:24.818" rpa="false" schemaversion="3">
+<suite id="s1" name="SuiteTestWEB" source="/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/testCases/SuiteTestWEB.robot">
+<kw name="-CONFIGURACIÓN INICIAL SUITETEST-" library="libraries_keywords" type="SETUP">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230117 16:40:28.258" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230117 16:40:25.258" endtime="20230117 16:40:28.258"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:25.257" endtime="20230117 16:40:28.259"/>
+</kw>
+<test id="s1-t1" name="Test Case 1 prueba Login mx" line="12">
+<kw name="-CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="SETUP">
+<kw name="-CONFIGURAR DIRECTORIO SCREENSHOTS-" library="libraries_keywords">
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20230117 16:40:28.264" endtime="20230117 16:40:28.264"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:28.263" endtime="20230117 16:40:28.264"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:28.262" endtime="20230117 16:40:28.265"/>
+</kw>
+<kw name="-LOGIN HOME CV CON PERFIL-" library="tests_keywords">
+<arg>${email_valido}</arg>
+<arg>${pass_valido}</arg>
+<kw name="-ABRIR LOGIN PAGE-" library="tests_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_login_page}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 16:40:28.267" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.clarovideo.com//login'.</msg>
+<status status="PASS" starttime="20230117 16:40:28.266" endtime="20230117 16:40:31.853"/>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<arg>1200</arg>
+<arg>1200</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230117 16:40:31.854" endtime="20230117 16:40:31.965"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:28.265" endtime="20230117 16:40:31.965"/>
+</kw>
+<kw name="-INGRESAR EMAIL PARA LOGIN-" library="tests_keywords">
+<arg>${email}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${elementos_login_email['reg_emailtextbox']}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230117 16:40:52.882" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-41.png"&gt;&lt;img src="../screenshots/selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230117 16:40:52.884" level="FAIL">Element 'xpath=//input[@id="emailLogin"]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230117 16:40:31.966" endtime="20230117 16:40:52.885"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${elementos_login_email['reg_emailtextbox']}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230117 16:40:52.886" endtime="20230117 16:40:52.886"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${elementos_login_email['log_siguiente']}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230117 16:40:52.886" endtime="20230117 16:40:52.886"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:31.965" endtime="20230117 16:40:52.887"/>
+</kw>
+<kw name="-INGRESAR PASSWORD PARA LOGIN-" library="tests_keywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230117 16:40:52.888" endtime="20230117 16:40:52.888"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 16:40:52.888" endtime="20230117 16:40:52.888"/>
+</kw>
+<kw name="-CLICK IMAGEN DE PERFIL-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 16:40:52.888" endtime="20230117 16:40:52.888"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 16:40:52.888" endtime="20230117 16:40:52.888"/>
+</kw>
+<kw name="-VALIDAR CARGA HOME-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 16:40:52.889" endtime="20230117 16:40:52.889"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:28.265" endtime="20230117 16:40:52.889"/>
+</kw>
+<kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 16:40:53.534" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-42.png"&gt;&lt;img src="../screenshots/selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230117 16:40:52.891" endtime="20230117 16:40:53.535"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:52.891" endtime="20230117 16:40:53.535"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:28.260" endtime="20230117 16:40:53.535">Element 'xpath=//input[@id="emailLogin"]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t2" name="CV-WEB-ACCESO-VALIDAR LOGOUT" line="20">
+<kw name="-CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="SETUP">
+<kw name="-CONFIGURAR DIRECTORIO SCREENSHOTS-" library="libraries_keywords">
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20230117 16:40:53.538" endtime="20230117 16:40:53.539"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:53.538" endtime="20230117 16:40:53.539"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:53.537" endtime="20230117 16:40:53.539"/>
+</kw>
+<kw name="-LOGIN HOME CV-" library="tests_keywords">
+<arg>${email_valido}</arg>
+<arg>${pass_valido}</arg>
+<kw name="-ABRIR LOGIN PAGE-" library="tests_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_login_page}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 16:40:53.541" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.clarovideo.com//login'.</msg>
+<status status="PASS" starttime="20230117 16:40:53.541" endtime="20230117 16:40:58.441"/>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<arg>1200</arg>
+<arg>1200</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230117 16:40:58.442" endtime="20230117 16:40:58.549"/>
+</kw>
+<status status="PASS" starttime="20230117 16:40:53.540" endtime="20230117 16:40:58.550"/>
+</kw>
+<kw name="-INGRESAR EMAIL PARA LOGIN-" library="tests_keywords">
+<arg>${email}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${elementos_login_email['reg_emailtextbox']}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230117 16:41:19.460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-43.png"&gt;&lt;img src="../screenshots/selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230117 16:41:19.461" level="FAIL">Element 'xpath=//input[@id="emailLogin"]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230117 16:40:58.551" endtime="20230117 16:41:19.461"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${elementos_login_email['reg_emailtextbox']}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230117 16:41:19.462" endtime="20230117 16:41:19.463"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${elementos_login_email['log_siguiente']}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230117 16:41:19.463" endtime="20230117 16:41:19.464"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:58.550" endtime="20230117 16:41:19.465"/>
+</kw>
+<kw name="-INGRESAR PASSWORD PARA LOGIN-" library="tests_keywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230117 16:41:19.465" endtime="20230117 16:41:19.465"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230117 16:41:19.465" endtime="20230117 16:41:19.465"/>
+</kw>
+<kw name="-VALIDAR CARGA HOME-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 16:41:19.466" endtime="20230117 16:41:19.466"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:53.540" endtime="20230117 16:41:19.466"/>
+</kw>
+<kw name="-LOGOUT HOME CV-" library="tests_keywords">
+<status status="NOT RUN" starttime="20230117 16:41:19.467" endtime="20230117 16:41:19.467"/>
+</kw>
+<kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 16:41:20.109" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-44.png"&gt;&lt;img src="../screenshots/selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230117 16:41:19.468" endtime="20230117 16:41:20.109"/>
+</kw>
+<status status="PASS" starttime="20230117 16:41:19.467" endtime="20230117 16:41:20.110"/>
+</kw>
+<status status="FAIL" starttime="20230117 16:40:53.536" endtime="20230117 16:41:20.110">Element 'xpath=//input[@id="emailLogin"]' not visible after 5 seconds.</status>
+</test>
+<kw name="-TERMINAR CONFIGURACIÓN SUITETEST-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 16:41:20.856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-45.png"&gt;&lt;img src="../screenshots/selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230117 16:41:20.113" endtime="20230117 16:41:20.856"/>
+</kw>
+<kw name="-CERRAR TODOS LOS NAVEGADORES-" library="libraries_keywords">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230117 16:41:20.857" endtime="20230117 16:41:20.979"/>
+</kw>
+<status status="PASS" starttime="20230117 16:41:20.856" endtime="20230117 16:41:20.979"/>
+</kw>
+<status status="PASS" starttime="20230117 16:41:20.112" endtime="20230117 16:41:20.979"/>
+</kw>
+<doc>Ambiente Global FrameWork generico para ajustar de acuerdo al BRF</doc>
+<status status="FAIL" starttime="20230117 16:40:24.820" endtime="20230117 16:41:20.979"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="SuiteTestWEB">SuiteTestWEB</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230117 16:40:25.097" level="ERROR">Error in file '/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/common_functionalities/tests_keywords.robot' on line 6: Importing library '/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/charles_proxy/charles_library.py' failed: IndentationError: expected an indented block (charles_library.py, line 32)
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/charles_proxy
+  /usr/local/bin
+  /usr/lib/python36.zip
+  /usr/lib/python3.6
+  /usr/lib/python3.6/lib-dynload
+  /var/lib/jenkins/.local/lib/python3.6/site-packages
+  /usr/local/lib/python3.6/dist-packages
+  /usr/lib/python3/dist-packages</msg>
+<msg timestamp="20230117 16:40:25.135" level="ERROR">Error in file '/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/common_functionalities/libraries_keywords.robot' on line 6: Importing library '/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/charles_proxy/charles_library.py' failed: IndentationError: expected an indented block (charles_library.py, line 32)
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/resources/charles_proxy
+  /usr/local/bin
+  /usr/lib/python36.zip
+  /usr/lib/python3.6
+  /usr/lib/python3.6/lib-dynload
+  /var/lib/jenkins/.local/lib/python3.6/site-packages
+  /usr/local/lib/python3.6/dist-packages
+  /usr/lib/python3/dist-packages</msg>
+</errors>
+</robot>

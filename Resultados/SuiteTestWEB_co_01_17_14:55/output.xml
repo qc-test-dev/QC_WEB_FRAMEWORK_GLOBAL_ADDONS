@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.6.9 on linux)" generated="20230117 14:56:10.019" rpa="false" schemaversion="3">
+<suite id="s1" name="SuiteTestWEB" source="/home/usr_admin/auto_qc/web_auto/QC_WEB_GENERIC_FRAMEWORK_GLOBAL/QC_WEB_FRAMEWORK_GLOBAL_ADDONS/testCases/SuiteTestWEB.robot">
+<kw name="-CONFIGURACIÓN INICIAL SUITETEST-" library="libraries_keywords" type="SETUP">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" starttime="20230117 14:56:14.481" endtime="20230117 14:56:17.183"/>
+</kw>
+<status status="FAIL" starttime="20230117 14:56:14.481" endtime="20230117 14:56:17.183"/>
+</kw>
+<test id="s1-t1" name="Test Case 1 prueba Login co" line="12">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230117 14:56:17.184" endtime="20230117 14:56:17.188">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t2" name="CV-WEB-ACCESO-VALIDAR LOGOUT" line="20">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230117 14:56:17.188" endtime="20230117 14:56:17.189">Test execution stopped due to a fatal error.</status>
+</test>
+<kw name="-TERMINAR CONFIGURACIÓN SUITETEST-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 14:56:17.191" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230117 14:56:17.191" endtime="20230117 14:56:17.191"/>
+</kw>
+<kw name="-CERRAR TODOS LOS NAVEGADORES-" library="libraries_keywords">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230117 14:56:17.192" endtime="20230117 14:56:17.192"/>
+</kw>
+<status status="PASS" starttime="20230117 14:56:17.192" endtime="20230117 14:56:17.192"/>
+</kw>
+<status status="PASS" starttime="20230117 14:56:17.190" endtime="20230117 14:56:17.193"/>
+</kw>
+<doc>Ambiente Global FrameWork generico para ajustar de acuerdo al BRF</doc>
+<status status="FAIL" starttime="20230117 14:56:10.022" endtime="20230117 14:56:17.193">Suite setup failed:
+Execution terminated by signal</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="0" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="SuiteTestWEB">SuiteTestWEB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
