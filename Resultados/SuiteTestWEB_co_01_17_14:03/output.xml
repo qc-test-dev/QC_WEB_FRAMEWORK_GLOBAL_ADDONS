@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.12 on darwin)" generated="20230117 14:03:16.680" rpa="false" schemaversion="3">
+<suite id="s1" name="SuiteTestWEB" source="/Users/at/Desktop/qc/automation/Global_framework_generico_login/qc_web_8531/testCases/SuiteTestWEB.robot">
+<kw name="-CONFIGURACIÓN INICIAL SUITETEST-" library="libraries_keywords" type="SETUP">
+<msg timestamp="20230117 14:03:20.988" level="FAIL">User keyword '-CONFIGURACIÓN INICIAL SUITETEST-' contains no keywords.</msg>
+<status status="FAIL" starttime="20230117 14:03:20.987" endtime="20230117 14:03:20.988"/>
+</kw>
+<test id="s1-t1" name="Test Case 1 prueba Login co" line="12">
+<status status="FAIL" starttime="20230117 14:03:20.988" endtime="20230117 14:03:20.988">Parent suite setup failed:
+User keyword '-CONFIGURACIÓN INICIAL SUITETEST-' contains no keywords.</status>
+</test>
+<test id="s1-t2" name="CV-WEB-ACCESO-VALIDAR LOGOUT" line="20">
+<status status="FAIL" starttime="20230117 14:03:20.989" endtime="20230117 14:03:20.989">Parent suite setup failed:
+User keyword '-CONFIGURACIÓN INICIAL SUITETEST-' contains no keywords.</status>
+</test>
+<kw name="-TERMINAR CONFIGURACIÓN SUITETEST-" library="libraries_keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230117 14:03:20.990" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230117 14:03:20.990" endtime="20230117 14:03:20.990"/>
+</kw>
+<kw name="-CERRAR TODOS LOS NAVEGADORES-" library="libraries_keywords">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230117 14:03:20.991" endtime="20230117 14:03:20.991"/>
+</kw>
+<status status="PASS" starttime="20230117 14:03:20.990" endtime="20230117 14:03:20.991"/>
+</kw>
+<status status="PASS" starttime="20230117 14:03:20.990" endtime="20230117 14:03:20.991"/>
+</kw>
+<doc>Ambiente Global FrameWork generico para ajustar de acuerdo al BRF</doc>
+<status status="FAIL" starttime="20230117 14:03:16.681" endtime="20230117 14:03:20.991">Suite setup failed:
+User keyword '-CONFIGURACIÓN INICIAL SUITETEST-' contains no keywords.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="SuiteTestWEB">SuiteTestWEB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

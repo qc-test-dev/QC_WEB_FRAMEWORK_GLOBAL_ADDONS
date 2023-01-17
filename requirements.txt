@@ -1,0 +1,8 @@
+robotframework
+requests
+selenium
+robotframework-excellibrary-xwfintech
+robotframework-selenium2library
+robotframework-seleniumlibrary
+selenium-testing-library
+robotframework-pabot

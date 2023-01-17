@@ -1,0 +1,14 @@
+
+
+0-cv-pom para el resto de paises
+
+
+1-correr con charles para levantar UAT globalcon al particion de cada pais YA PERO VER SI JALA EN EL SERVIDOR....
+2-ver como corre en jenkins las etiquetas, ver si respeta los reportes
+3-con el brf generico terminado personalizar a picardia y saber cuanto tiempo tomo
+4-usar mismo brf generico para prueba de noggin
+
+5- clonar este BRF para AUP y ver que tan facil fue subir picardia como brf...
+
+
+despues de venir checar porque hay error de logout, checar el perfil... y checar que no se ehereden keywords
